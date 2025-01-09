@@ -13,8 +13,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@photo-sphere-viewer/core": "^5.11.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-photo-sphere-viewer": "^6.0.0",
     "react-scripts": "^5.0.1"
   },
   "browserslist": {

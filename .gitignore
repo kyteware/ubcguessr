@@ -1,3 +1,4 @@
 /.vscode
 /ui/build
 /ui/node_modules
+/static/*
