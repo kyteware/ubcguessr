@@ -8,7 +8,7 @@ function My360Image() {
     <ReactPhotoSphereViewer 
       src="/360images/sample.jpg"
       ref={viewerRef}
-      height={"100vh"}
+      height={"100%"}
       width={"100%"}
     />
   );
