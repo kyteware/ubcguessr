@@ -1,15 +1,15 @@
 import React, { useRef } from 'react';
-import PhotoSphereViewer from 'react-photo-sphere-viewer';
+import { ReactPhotoSphereViewer } from 'react-photo-sphere-viewer';
 
 function My360Image() {
   const viewerRef = useRef(null);
 
   return (
-    <PhotoSphereViewer 
-      panorama="/path/to/your/360image.jpg" 
-      defaultLat={0} 
-      defaultLong={0} 
-      ref={viewerRef} 
+    <ReactPhotoSphereViewer 
+      src="/360images/sample.jpg"
+      ref={viewerRef}
+      height={"100vh"}
+      width={"100%"}
     />
   );
 }

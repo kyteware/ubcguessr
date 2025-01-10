@@ -2,4 +2,4 @@ server:
   port: 8000
 spring.web:
   resources:
-    static-locations: classpath:/static/, file:../ui/build/ 
+    static-locations: classpath:/static/, file:../ui/dist/ , file:../static
