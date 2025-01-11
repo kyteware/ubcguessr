@@ -6,7 +6,6 @@ import './app.css';
 function App() {
     return (
         <div className="sphere-container">
-            <h1>Hello, World!</h1>
             <My360Image />
         </div>
     )
