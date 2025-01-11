@@ -6571,9 +6571,8 @@ function My360Image() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_photo_sphere_viewer__WEBPACK_IMPORTED_MODULE_1__.ReactPhotoSphereViewer, {
     src: "/360images/sample.jpg",
     ref: viewerRef,
-    height: "100vh",
-    width: "100%",
-    littlePlanet: true
+    height: "100%",
+    width: "100%"
   });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (My360Image);
@@ -90396,7 +90395,7 @@ function App() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Hello, World!");
 }
 var root = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById('root'));
-root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("title", null, "Hiiiii"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_photoSphere__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, "Hiiiii"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_photoSphere__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
 })();
 
 /******/ })()

@@ -15,7 +15,7 @@ public class Api {
     
     @GetMapping("/example")
     public String getNumber() {
-        num ++;
+        num++;
         return String.valueOf(num);
     }
 }

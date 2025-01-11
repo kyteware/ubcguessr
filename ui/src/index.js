@@ -9,7 +9,7 @@ function App() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-    <title>Hiiiii</title>
+    <header>Hiiiii</header>
     <My360Image />
   </div>
 );
