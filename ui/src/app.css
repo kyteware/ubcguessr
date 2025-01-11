@@ -1,0 +1,10 @@
+#root {
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+}
+
+.sphere-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
