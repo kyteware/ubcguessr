@@ -11,8 +11,9 @@
         - [ ] Keep track of games
         - [ ] Information about each photo
     - [ ] Sessions and user passwords (Ryan)
-- [ ] Photos
-    - [ ] Setup phone website (Ryan)
+- [ ] Photos/Assets
+    - [ ] Setup phone website for logging (Ryan)
     - [ ] Process Photos (Ryan)
         - [ ] Time -> location
         - [ ] Blurring faces
+    - [ ] Design map (Ryan)
