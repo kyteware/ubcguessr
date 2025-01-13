@@ -7,11 +7,11 @@ public class Image360 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name = "url", nullable = false)
+    // @Column(name = "url", nullable = false)
     private String url;
-    @Column(name = "latitude", nullable = false)
+    // @Column(name = "latitude", nullable = false)
     private float lat;
-    @Column(name = "longitude", nullable = false)
+    // @Column(name = "longitude", nullable = false)
     private float lon;
 
     public Image360(String url, float lat, float lon) {
