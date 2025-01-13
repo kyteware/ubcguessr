@@ -1,9 +1,18 @@
 package com.ubcguessr.server;
 
+import jakarta.persistence.*;
+
+@Entity
 public class Image360 {
-    String url;
-    float lat;
-    float lon;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+    @Column(name = "url", nullable = false)
+    private String url;
+    @Column(name = "latitude", nullable = false)
+    private float lat;
+    @Column(name = "longitude", nullable = false)
+    private float lon;
 
     public Image360(String url, float lat, float lon) {
         this.url = url;
