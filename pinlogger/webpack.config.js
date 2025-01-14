@@ -27,5 +27,11 @@ module.exports = {
     static: {
       directory: path.join(__dirname, 'dist'),  // Serve files from the dist directory
     },
+    proxy: [
+      {
+        context: ['/api/logs'],
+        target: 'http://localhost:3001'
+      }
+    ]
   },
 };

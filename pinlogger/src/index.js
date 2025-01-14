@@ -26,6 +26,19 @@ logButton.addEventListener('click', () => {
     let row = document.createElement("li");
     row.textContent = "Time: " + log.time + " Lat: " + log.lat + " Long: " + log.long
     logListElement.appendChild(row);
+
+    fetch('/api/logs', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(log)
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("error posting log")
+            }
+        });
 });
 
 lastpinButton.addEventListener('click', () => {

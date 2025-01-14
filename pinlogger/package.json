@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --open"
+    "start:app": "webpack-dev-server --open",
+    "start:api": "node server.js",
+    "start": "npm-run-all --parallel start:api start:app"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,7 @@
     "@babel/preset-env": "^7.26.0",
     "babel-loader": "^9.2.1",
     "css-loader": "^7.1.2",
+    "npm-run-all": "^4.1.5",
     "style-loader": "^4.0.0",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0"
@@ -23,5 +26,8 @@
     "presets": [
       "@babel/preset-env"
     ]
+  },
+  "dependencies": {
+    "express": "^4.21.2"
   }
 }
