@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>pinlogger</title>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" /> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+</head>
+
+<body>
+    <div id="root">
+        <i id="crosshair" class="fa-solid fa-crosshairs"></i>
+        <div id="map"></div>
+        <div id="topview">
+            <div id="logs" style="display: none;">
+                <h3>> Log</h3>
+                <ul id="logList"/>
+            </div>
+            <div id="controls" class="bbar">
+                <button id="logbutton" class="bigbutton">
+                    <i class="fa-solid fa-record-vinyl"></i>
+                </button>
+                <button id="lastpin" class="bigbutton">
+                    <i id="up-caret" class="fa-solid fa-caret-up"></i>
+                    <span class="pin-text-log">
+                        Logs
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="./bundle.js"></script>
+</body>
+
+</html>

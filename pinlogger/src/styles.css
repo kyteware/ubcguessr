@@ -1,0 +1,96 @@
+body, #root, #map {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: #f06d06;
+}
+
+#map {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+#topview {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 40px);
+  margin: 0 20px 20px;
+  z-index: 10000000000;
+  height: fit-content;
+  gap: 10px;
+}
+
+.bbar {
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  border: 1px solid #ccc;
+}
+
+#logs {
+  height: 50vh;
+  padding: 15px;
+  margin: 0 50px 10px;
+  border-radius: 10px;
+  background-color: grey;
+  border: 1px solid #ccc;
+}
+
+.bigbutton {
+  height: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  font-size: 30px;
+  background-color: #785964;
+  border: 1px solid #ccc;
+}
+
+.bigbutton:hover {
+  background-color: #A35D77;
+}
+
+#lastpin {
+  flex-grow: 1;
+  height: 100%;
+  background-color: #785964;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+/* i dont know why i need this :( */
+#lastpin:hover { 
+  background-color: #A35D77;
+}
+
+#up-caret {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.pin-text-log {
+  flex-grow: 1;
+  font-size: 15px;
+}
+
+#crosshair {
+  position: absolute;
+  z-index: 1000000000000;
+  top: 49%;
+  left: 48.8%;
+}

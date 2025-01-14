@@ -1,3 +1,5 @@
 /ui/dist
 /ui/node_modules
 /static/*/*
+/pinlogger/node_modules/
+/pinlogger/dist/bundle.js
