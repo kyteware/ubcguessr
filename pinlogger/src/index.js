@@ -36,13 +36,14 @@ logButton.addEventListener('click', () => {
     })
         .then(response => {
             if (!response.ok) {
-                throw new Error("error posting log")
+                row.textContent = "NOT UPLOADED: " + row.textContent;
             }
         });
+
+    console.log("successfully responded to log button")
 });
 
 lastpinButton.addEventListener('click', () => {
-    console.log(logsElement);
     if (hidden === false) {
         logsElement.style.display = "none";
         hidden = true;
