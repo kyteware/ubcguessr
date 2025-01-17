@@ -14,6 +14,9 @@ public class Image360 {
     // @Column(name = "longitude", nullable = false)
     private float lon;
 
+    public Image360() {
+    }
+
     public Image360(String url, float lat, float lon) {
         this.url = url;
         this.lat = lat;
