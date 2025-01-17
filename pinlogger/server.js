@@ -14,6 +14,7 @@ app.post('/api/logs', (req, res) => {
     console.log("hi");
     const log = req.body;
     logs.push(log);
+    console.log(log);
     res.status(201).end()
 });
 

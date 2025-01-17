@@ -6,7 +6,12 @@ let logsElement = document.getElementById("logs");
 let logListElement = document.getElementById("logList");
 var hidden = true;
 
-const map = L.map('map').setView([49.2657913160942, -123.24934646027087], 15);
+// checkboxes
+let indoorsCheck = document.getElementById("indoors")
+let lectureHallCheck = document.getElementById("inLectureHall");
+let specialCheck = document.getElementById("special")
+
+const map = L.map('map').setView([49.2657913160942, -123.24934646027087], 18);
 var logs = [];
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -21,6 +26,15 @@ logButton.addEventListener('click', () => {
     log.time = (new Date()).toLocaleTimeString();
     log.lat = center.lat;
     log.long = center.lng;
+    
+    let indoors = indoorsCheck.checked;
+    let inLectureHall = lectureHallCheck.checked;
+    let special = specialCheck.checked;
+
+    log.indoors = indoors;
+    log.inLectureHall = inLectureHall;
+    log.special = special;
+
     logs.push(log);
 
     let row = document.createElement("li");

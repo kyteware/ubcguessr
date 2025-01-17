@@ -19,9 +19,22 @@
     <div id="root">
         <i id="crosshair" class="fa-solid fa-crosshairs"></i>
         <div id="map"></div>
+        <div id="features">
+            <div class="checkbox-container">
+                <input type="checkbox" id="indoors">
+                <label for="indoors">Indoors?</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="inLectureHall">
+                <label for="inLectureHall">Lecture Hall?</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="special">
+                <label for="special">Special?</label>
+            </div>
+        </div>
         <div id="topview">
             <div id="logs" style="display: none;">
-                <h3>> Log</h3>
                 <ul id="logList"/>
             </div>
             <div id="controls" class="bbar">
