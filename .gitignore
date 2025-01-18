@@ -4,3 +4,4 @@
 /pinlogger/node_modules/
 /pinlogger/dist/bundle.js
 /pinlogger/pins.txt
+/server/database.sqlite
