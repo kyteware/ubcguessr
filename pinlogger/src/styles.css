@@ -98,8 +98,9 @@ body,
 #crosshair {
     position: absolute;
     z-index: 1000000000000;
-    top: 49%;
-    left: 48.8%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 input[type="checkbox"] {
