@@ -5,3 +5,5 @@
 /pinlogger/dist/bundle.js
 /pinlogger/pins.txt
 /server/database.sqlite
+/frontend/node_modules/
+/frontend/dist/

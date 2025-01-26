@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import My360Image from './photoSphere';
 import './app.css';
 
-function App() {
+export default function App() {
     return (
         <div className="sphere-container">
             <My360Image />
